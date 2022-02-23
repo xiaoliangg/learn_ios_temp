@@ -78,7 +78,7 @@
 
 
 #pragma mark - UISearchBarDelegate
-
+// 点击搜索框开始编辑时调用
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)aSearchBar {
     
     // Create the popover if it is not already open.
@@ -104,7 +104,7 @@
     // Display the popover.
     [self.recentSearchesPopoverController presentPopoverFromRect:[self.searchBar bounds] inView:self.searchBar permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
-
+// todo
 - (void)searchBarTextDidEndEditing:(UISearchBar *)aSearchBar {
     
     // If the user finishes editing text in the search bar by, for example: tapping away
@@ -122,12 +122,14 @@
     [aSearchBar resignFirstResponder];
 }
 
+// 搜索词改变后调用，每次改变都调用
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
     
     // When the search string changes, filter the recents list accordingly.
     [self.recentSearchesController filterResultsUsingString:searchText];
 }
 
+// 触发搜索后调用
 - (void)searchBarSearchButtonClicked:(UISearchBar *)aSearchBar {
     
     // When the search button is tapped, add the search term to recents and conduct the search.

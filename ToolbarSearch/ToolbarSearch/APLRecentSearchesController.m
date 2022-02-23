@@ -66,7 +66,9 @@ NSString *RecentSearchesKey = @"RecentSearchesKey";
 
 @property (nonatomic, weak) IBOutlet UIBarButtonItem *clearButtonItem;
 
+// 搜索历史
 @property (nonatomic) NSArray *recentSearches;
+// 过滤后展示的搜索历史
 @property (nonatomic) NSArray *displayedRecentSearches;
 @property (nonatomic, readwrite) UIActionSheet *confirmSheet;
 
@@ -107,9 +109,9 @@ NSString *RecentSearchesKey = @"RecentSearchesKey";
     self.displayedRecentSearches = self.recentSearches;
 }
 
-
 #pragma mark - Managing the recents list
-
+// 将搜索字符串添加到历史记录。搜索完后调用。
+// APLToolbarSearchViewController 的 UISearchBarDelegate.searchBarSearchButtonClicked 方法调用
 - (void)addToRecentSearches:(NSString *)searchString {
     
     // Filter out any strings that shouldn't be in the recents list.
@@ -137,7 +139,8 @@ NSString *RecentSearchesKey = @"RecentSearchesKey";
     self.clearButtonItem.enabled = YES;
 }
 
-
+// 在搜索框输入时，每输入一个字符都会调用，用来过滤历史记录
+// APLToolbarSearchViewController 的 UISearchBarDelegate.textDidChange 方法调用
 - (void)filterResultsUsingString:(NSString *)filterString {
 
     // If the search string is zero-length, then restore the recent searches, otherwise
@@ -155,6 +158,7 @@ NSString *RecentSearchesKey = @"RecentSearchesKey";
     [self.tableView reloadData];
 }
 
+// 点击 "clear" 按钮时调用此方法，storyboard中有关联
 - (IBAction)showClearRecentsAlert:(id)sender {
     
     NSString *cancelButtonTitle = NSLocalizedString(@"Cancel", @"Cancel button title");
@@ -165,6 +169,7 @@ NSString *RecentSearchesKey = @"RecentSearchesKey";
     [self.confirmSheet showInView:self.view];
 }
 
+#pragma -mark -UIActionSheetDelegate
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
     
     if (buttonIndex == 0) {
