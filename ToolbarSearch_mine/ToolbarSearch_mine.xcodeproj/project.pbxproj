@@ -14,7 +14,7 @@
 		7980FE6D27CD05EA00F94602 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980FE6C27CD05EA00F94602 /* main.m */; };
 		7980FE7427CD078200F94602 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7980FE7327CD078200F94602 /* MainStoryboard.storyboard */; };
 		7980FE7727CD091500F94602 /* APLToolbarSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980FE7627CD091500F94602 /* APLToolbarSearchViewController.m */; };
-		7980FE7A27CD096400F94602 /* APLRecentSearchesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980FE7927CD096400F94602 /* APLRecentSearchesController.m */; };
+		7980FE7D27CD323300F94602 /* APLRecentSearchesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980FE7C27CD323300F94602 /* APLRecentSearchesController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +31,8 @@
 		7980FE7327CD078200F94602 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		7980FE7527CD091500F94602 /* APLToolbarSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLToolbarSearchViewController.h; sourceTree = "<group>"; };
 		7980FE7627CD091500F94602 /* APLToolbarSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLToolbarSearchViewController.m; sourceTree = "<group>"; };
-		7980FE7827CD096400F94602 /* APLRecentSearchesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLRecentSearchesController.h; sourceTree = "<group>"; };
-		7980FE7927CD096400F94602 /* APLRecentSearchesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLRecentSearchesController.m; sourceTree = "<group>"; };
+		7980FE7B27CD323300F94602 /* APLRecentSearchesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLRecentSearchesController.h; sourceTree = "<group>"; };
+		7980FE7C27CD323300F94602 /* APLRecentSearchesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLRecentSearchesController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +77,8 @@
 				7980FE7327CD078200F94602 /* MainStoryboard.storyboard */,
 				7980FE7527CD091500F94602 /* APLToolbarSearchViewController.h */,
 				7980FE7627CD091500F94602 /* APLToolbarSearchViewController.m */,
-				7980FE7827CD096400F94602 /* APLRecentSearchesController.h */,
-				7980FE7927CD096400F94602 /* APLRecentSearchesController.m */,
+				7980FE7B27CD323300F94602 /* APLRecentSearchesController.h */,
+				7980FE7C27CD323300F94602 /* APLRecentSearchesController.m */,
 			);
 			path = ToolbarSearch_mine;
 			sourceTree = "<group>";
@@ -152,7 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7980FE7A27CD096400F94602 /* APLRecentSearchesController.m in Sources */,
+				7980FE7D27CD323300F94602 /* APLRecentSearchesController.m in Sources */,
 				7980FE6227CD05EA00F94602 /* ViewController.m in Sources */,
 				7980FE7727CD091500F94602 /* APLToolbarSearchViewController.m in Sources */,
 				7980FE5C27CD05EA00F94602 /* AppDelegate.m in Sources */,
@@ -215,7 +215,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +268,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

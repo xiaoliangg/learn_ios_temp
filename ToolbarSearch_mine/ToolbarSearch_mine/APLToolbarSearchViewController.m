@@ -68,10 +68,10 @@
     //
     if (self.recentSearchesPopoverController != nil) {
         
-//        if (self.recentSearchesController.confirmSheet == nil) {
-//            [self.recentSearchesPopoverController dismissPopoverAnimated:YES];
-//            self.recentSearchesPopoverController = nil;
-//        }
+        if (self.recentSearchesController.confirmSheet == nil) {
+            [self.recentSearchesPopoverController dismissPopoverAnimated:YES];
+            self.recentSearchesPopoverController = nil;
+        }
     }
     [aSearchBar resignFirstResponder];
 }
@@ -81,7 +81,7 @@
     NSLog(@"%@",NSStringFromSelector(_cmd));
 
     // When the search string changes, filter the recents list accordingly.
-//    [self.recentSearchesController filterResultsUsingString:searchText];
+    [self.recentSearchesController filterResultsUsingString:searchText];
 }
 
 // 触发搜索后调用
@@ -89,7 +89,7 @@
     NSLog(@"%@",NSStringFromSelector(_cmd));
     // When the search button is tapped, add the search term to recents and conduct the search.
     NSString *searchString = [self.searchbar text];
-//    [self.recentSearchesController addToRecentSearches:searchString];
+    [self.recentSearchesController addToRecentSearches:searchString];
     [self finishSearchWithString:searchString];
 }
 
@@ -100,7 +100,7 @@
     // Remove focus from the search bar without committing the search.
     self.progressLabel.text = NSLocalizedString(@"Canceled a search.", @"canceled search string for the progress label");
     self.recentSearchesPopoverController = nil;
-//    [self.searchBar resignFirstResponder];
+    [self.searchbar resignFirstResponder];
 }
 
 

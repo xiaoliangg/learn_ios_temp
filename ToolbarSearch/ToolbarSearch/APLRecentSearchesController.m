@@ -81,7 +81,8 @@ NSString *RecentSearchesKey = @"RecentSearchesKey";
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad {
-    
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+
     [super viewDidLoad];
 
     // Set up the recent searches list, from user defaults or using an empty array.
@@ -103,7 +104,8 @@ NSString *RecentSearchesKey = @"RecentSearchesKey";
 
 
 - (void)viewWillAppear:(BOOL)animated {
- 
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+
     // Ensure the complete list of recents is shown on first display.
     [super viewWillAppear:animated];
     self.displayedRecentSearches = self.recentSearches;
@@ -113,7 +115,8 @@ NSString *RecentSearchesKey = @"RecentSearchesKey";
 // 将搜索字符串添加到历史记录。搜索完后调用。
 // APLToolbarSearchViewController 的 UISearchBarDelegate.searchBarSearchButtonClicked 方法调用
 - (void)addToRecentSearches:(NSString *)searchString {
-    
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+
     // Filter out any strings that shouldn't be in the recents list.
     if ([searchString isEqualToString:@""]) {
         return;
@@ -142,6 +145,7 @@ NSString *RecentSearchesKey = @"RecentSearchesKey";
 // 在搜索框输入时，每输入一个字符都会调用，用来过滤历史记录
 // APLToolbarSearchViewController 的 UISearchBarDelegate.textDidChange 方法调用
 - (void)filterResultsUsingString:(NSString *)filterString {
+    NSLog(@"%@",NSStringFromSelector(_cmd));
 
     // If the search string is zero-length, then restore the recent searches, otherwise
     // create a predicate to filter the recent searches using the search string.
@@ -160,7 +164,8 @@ NSString *RecentSearchesKey = @"RecentSearchesKey";
 
 // 点击 "clear" 按钮时调用此方法，storyboard中有关联
 - (IBAction)showClearRecentsAlert:(id)sender {
-    
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+
     NSString *cancelButtonTitle = NSLocalizedString(@"Cancel", @"Cancel button title");
     NSString *clearAllRecentsButtonTitle = NSLocalizedString(@"Clear All Recents", @"Clear All Recents button title");
     
@@ -171,7 +176,8 @@ NSString *RecentSearchesKey = @"RecentSearchesKey";
 
 #pragma -mark -UIActionSheetDelegate
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
-    
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+
     if (buttonIndex == 0) {
         /*
          If the user chose to clear recents, remove the recents entry from user defaults, set the list to an empty array, and redisplay the table view.
@@ -189,13 +195,15 @@ NSString *RecentSearchesKey = @"RecentSearchesKey";
 #pragma mark - Table view methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+
     return [self.displayedRecentSearches count];
 }
 
 // Display the strings in displayedRecentSearches.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -205,7 +213,8 @@ NSString *RecentSearchesKey = @"RecentSearchesKey";
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+
     // Notify the delegate if a row is selected.
     [self.delegate recentSearchesController:self didSelectString:[self.displayedRecentSearches objectAtIndex:indexPath.row]];
 }

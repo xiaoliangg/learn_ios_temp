@@ -73,7 +73,7 @@ extern NSString *RecentSearchesKey;
 
 @interface APLRecentSearchesController : UITableViewController <UIActionSheetDelegate>
 
-//@property (nonatomic, weak) id <RecentSearchesDelegate> delegate;
+@property (nonatomic, weak) id <RecentSearchesDelegate> delegate;
 
 @property (nonatomic, readonly) UIActionSheet *confirmSheet;
 
