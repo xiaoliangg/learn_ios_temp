@@ -10,10 +10,11 @@
 		7980FE5C27CD05EA00F94602 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980FE5B27CD05EA00F94602 /* AppDelegate.m */; };
 		7980FE5F27CD05EA00F94602 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980FE5E27CD05EA00F94602 /* SceneDelegate.m */; };
 		7980FE6227CD05EA00F94602 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980FE6127CD05EA00F94602 /* ViewController.m */; };
-		7980FE6527CD05EA00F94602 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7980FE6327CD05EA00F94602 /* Main.storyboard */; };
 		7980FE6727CD05EA00F94602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7980FE6627CD05EA00F94602 /* Assets.xcassets */; };
-		7980FE6A27CD05EA00F94602 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7980FE6827CD05EA00F94602 /* LaunchScreen.storyboard */; };
 		7980FE6D27CD05EA00F94602 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980FE6C27CD05EA00F94602 /* main.m */; };
+		7980FE7427CD078200F94602 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7980FE7327CD078200F94602 /* MainStoryboard.storyboard */; };
+		7980FE7727CD091500F94602 /* APLToolbarSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980FE7627CD091500F94602 /* APLToolbarSearchViewController.m */; };
+		7980FE7A27CD096400F94602 /* APLRecentSearchesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980FE7927CD096400F94602 /* APLRecentSearchesController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,11 +25,14 @@
 		7980FE5E27CD05EA00F94602 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		7980FE6027CD05EA00F94602 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7980FE6127CD05EA00F94602 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7980FE6427CD05EA00F94602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7980FE6627CD05EA00F94602 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7980FE6927CD05EA00F94602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7980FE6B27CD05EA00F94602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7980FE6C27CD05EA00F94602 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7980FE7327CD078200F94602 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		7980FE7527CD091500F94602 /* APLToolbarSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLToolbarSearchViewController.h; sourceTree = "<group>"; };
+		7980FE7627CD091500F94602 /* APLToolbarSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLToolbarSearchViewController.m; sourceTree = "<group>"; };
+		7980FE7827CD096400F94602 /* APLRecentSearchesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLRecentSearchesController.h; sourceTree = "<group>"; };
+		7980FE7927CD096400F94602 /* APLRecentSearchesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLRecentSearchesController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +71,14 @@
 				7980FE5E27CD05EA00F94602 /* SceneDelegate.m */,
 				7980FE6027CD05EA00F94602 /* ViewController.h */,
 				7980FE6127CD05EA00F94602 /* ViewController.m */,
-				7980FE6327CD05EA00F94602 /* Main.storyboard */,
 				7980FE6627CD05EA00F94602 /* Assets.xcassets */,
-				7980FE6827CD05EA00F94602 /* LaunchScreen.storyboard */,
 				7980FE6B27CD05EA00F94602 /* Info.plist */,
 				7980FE6C27CD05EA00F94602 /* main.m */,
+				7980FE7327CD078200F94602 /* MainStoryboard.storyboard */,
+				7980FE7527CD091500F94602 /* APLToolbarSearchViewController.h */,
+				7980FE7627CD091500F94602 /* APLToolbarSearchViewController.m */,
+				7980FE7827CD096400F94602 /* APLRecentSearchesController.h */,
+				7980FE7927CD096400F94602 /* APLRecentSearchesController.m */,
 			);
 			path = ToolbarSearch_mine;
 			sourceTree = "<group>";
@@ -133,9 +140,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7980FE6A27CD05EA00F94602 /* LaunchScreen.storyboard in Resources */,
 				7980FE6727CD05EA00F94602 /* Assets.xcassets in Resources */,
-				7980FE6527CD05EA00F94602 /* Main.storyboard in Resources */,
+				7980FE7427CD078200F94602 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7980FE7A27CD096400F94602 /* APLRecentSearchesController.m in Sources */,
 				7980FE6227CD05EA00F94602 /* ViewController.m in Sources */,
+				7980FE7727CD091500F94602 /* APLToolbarSearchViewController.m in Sources */,
 				7980FE5C27CD05EA00F94602 /* AppDelegate.m in Sources */,
 				7980FE6D27CD05EA00F94602 /* main.m in Sources */,
 				7980FE5F27CD05EA00F94602 /* SceneDelegate.m in Sources */,
@@ -154,25 +162,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		7980FE6327CD05EA00F94602 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7980FE6427CD05EA00F94602 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7980FE6827CD05EA00F94602 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7980FE6927CD05EA00F94602 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7980FE6E27CD05EA00F94602 /* Debug */ = {
@@ -299,7 +288,7 @@
 				INFOPLIST_FILE = ToolbarSearch_mine/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = MainStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -326,7 +315,7 @@
 				INFOPLIST_FILE = ToolbarSearch_mine/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = MainStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
