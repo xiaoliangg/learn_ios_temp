@@ -80,7 +80,8 @@
 #pragma mark - UISearchBarDelegate
 // 点击搜索框开始编辑时调用
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)aSearchBar {
-    
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+
     // Create the popover if it is not already open.
     if (self.recentSearchesPopoverController == nil) {
 
@@ -106,7 +107,8 @@
 }
 // todo
 - (void)searchBarTextDidEndEditing:(UISearchBar *)aSearchBar {
-    
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+
     // If the user finishes editing text in the search bar by, for example: tapping away
     // rather than selecting from the recents list, then just dismiss the popover,
     // but only if its confirm UIActionSheet is not open (UIActionSheets can take away
@@ -124,14 +126,16 @@
 
 // 搜索词改变后调用，每次改变都调用
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
-    
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+
     // When the search string changes, filter the recents list accordingly.
     [self.recentSearchesController filterResultsUsingString:searchText];
 }
 
 // 触发搜索后调用
 - (void)searchBarSearchButtonClicked:(UISearchBar *)aSearchBar {
-    
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+
     // When the search button is tapped, add the search term to recents and conduct the search.
     NSString *searchString = [self.searchBar text];
     [self.recentSearchesController addToRecentSearches:searchString];
@@ -140,7 +144,8 @@
 
 #pragma mark - UIPopoverControllerDelegate
 - (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController {
-    
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+
     // Remove focus from the search bar without committing the search.
     self.progressLabel.text = NSLocalizedString(@"Canceled a search.", @"canceled search string for the progress label");
     self.recentSearchesPopoverController = nil;
@@ -151,7 +156,8 @@
 #pragma mark - Finish the search
 
 - (void)finishSearchWithString:(NSString *)searchString {
-    
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+
     // Conduct the search. In this case, simply report the search term used.
     [self.recentSearchesPopoverController dismissPopoverAnimated:YES];
     self.recentSearchesPopoverController = nil;

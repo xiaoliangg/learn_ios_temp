@@ -18,7 +18,12 @@ extern NSString *RecentSearchesKey;
 - (void)recentSearchesController:(APLRecentSearchesController *)controller didSelectString:(NSString *)searchString;
 @end
 
+
+
 @interface APLRecentSearchesController : UITableViewController <UIActionSheetDelegate>
+
+
+@property (nonatomic, weak) id <RecentSearchesDelegate> delegate;
 
 @end
 

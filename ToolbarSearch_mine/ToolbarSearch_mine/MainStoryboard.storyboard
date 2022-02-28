@@ -16,9 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Performed a search using..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOT-vL-vYd">
-                                <rect key="frame" x="97" y="355" width="220" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHE-8N-dNk">
+                                <rect key="frame" x="0.0" y="61" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="38g-Gc-WhE"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2Tg-gw-WRF"/>
+                                    <barButtonItem style="plain" id="so3-NG-Gn1">
+                                        <searchBar key="customView" contentMode="redraw" id="3xw-MD-iIi">
+                                            <rect key="frame" x="93" y="0.0" width="301" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="8BF-HU-SNO" id="Jrw-Hp-rmx"/>
+                                            </connections>
+                                        </searchBar>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Performed a search using..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOT-vL-vYd">
+                                <rect key="frame" x="97" y="438" width="220" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -26,9 +44,19 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ock-De-Jhs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ock-De-Jhs" firstAttribute="trailing" secondItem="hOT-vL-vYd" secondAttribute="trailing" constant="97" id="Ut0-DE-5Wo"/>
+                            <constraint firstItem="Ock-De-Jhs" firstAttribute="bottom" secondItem="hOT-vL-vYd" secondAttribute="bottom" constant="403" id="cNg-m3-Nm0"/>
+                            <constraint firstItem="iHE-8N-dNk" firstAttribute="top" secondItem="Ock-De-Jhs" secondAttribute="top" constant="17" id="epb-us-U8r"/>
+                            <constraint firstItem="iHE-8N-dNk" firstAttribute="leading" secondItem="Ock-De-Jhs" secondAttribute="leading" id="giN-p4-WA4"/>
+                            <constraint firstItem="iHE-8N-dNk" firstAttribute="trailing" secondItem="Ock-De-Jhs" secondAttribute="trailing" id="lUf-g0-P9C"/>
+                            <constraint firstItem="hOT-vL-vYd" firstAttribute="leading" secondItem="Ock-De-Jhs" secondAttribute="leading" constant="97" id="nNp-pa-Uyj"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="progressLabel" destination="hOT-vL-vYd" id="bmT-By-u2z"/>
+                        <outlet property="searchbar" destination="3xw-MD-iIi" id="y9U-lL-RCQ"/>
+                        <outlet property="toolbar" destination="iHE-8N-dNk" id="Fa8-28-Uy7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ubU-uX-C6i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
