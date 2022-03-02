@@ -6,6 +6,8 @@
 //
 
 #import "SceneDelegate.h"
+#import "View1Controller.h"
+#import "ReminderViewController.h"
 
 @interface SceneDelegate ()
 
@@ -32,6 +34,15 @@
 - (void)sceneDidBecomeActive:(UIScene *)scene {
     // Called when the scene has moved from an inactive state to an active state.
     // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+    // 获取指向 NSBundle 对象的指针，该NSBundle对象代表应用的主程序包
+    NSBundle *appBundle = [NSBundle mainBundle];
+    
+    // 告诉初始化方法在 appBundle 查找BNRReminderViewController.xib文件
+    ReminderViewController *rvc = [[ReminderViewController alloc] initWithNibName:@"ReminderViewController" bundle:appBundle];
+
+//    View1Controller *hvc = [[View1Controller alloc] init];
+    [self.window setRootViewController:rvc];
+    [self.window setBackgroundColor:[UIColor whiteColor]];
 }
 
 

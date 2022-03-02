@@ -14,6 +14,10 @@
 		7980FE9727CFACC700F94602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7980FE9627CFACC700F94602 /* Assets.xcassets */; };
 		7980FE9A27CFACC700F94602 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7980FE9827CFACC700F94602 /* LaunchScreen.storyboard */; };
 		7980FE9D27CFACC700F94602 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980FE9C27CFACC700F94602 /* main.m */; };
+		7980FEA527CFAD4300F94602 /* View1.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980FEA427CFAD4300F94602 /* View1.m */; };
+		7980FEA827CFB65800F94602 /* View1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980FEA727CFB65800F94602 /* View1Controller.m */; };
+		7980FEAB27CFB75500F94602 /* ReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980FEAA27CFB75500F94602 /* ReminderViewController.m */; };
+		7980FEAD27CFB8A600F94602 /* ReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7980FEAC27CFB8A600F94602 /* ReminderViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,13 @@
 		7980FE9927CFACC700F94602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7980FE9B27CFACC700F94602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7980FE9C27CFACC700F94602 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7980FEA327CFAD4300F94602 /* View1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = View1.h; sourceTree = "<group>"; };
+		7980FEA427CFAD4300F94602 /* View1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = View1.m; sourceTree = "<group>"; };
+		7980FEA627CFB65800F94602 /* View1Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = View1Controller.h; sourceTree = "<group>"; };
+		7980FEA727CFB65800F94602 /* View1Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = View1Controller.m; sourceTree = "<group>"; };
+		7980FEA927CFB75500F94602 /* ReminderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReminderViewController.h; sourceTree = "<group>"; };
+		7980FEAA27CFB75500F94602 /* ReminderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReminderViewController.m; sourceTree = "<group>"; };
+		7980FEAC27CFB8A600F94602 /* ReminderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +83,13 @@
 				7980FE9827CFACC700F94602 /* LaunchScreen.storyboard */,
 				7980FE9B27CFACC700F94602 /* Info.plist */,
 				7980FE9C27CFACC700F94602 /* main.m */,
+				7980FEA327CFAD4300F94602 /* View1.h */,
+				7980FEA427CFAD4300F94602 /* View1.m */,
+				7980FEA627CFB65800F94602 /* View1Controller.h */,
+				7980FEA727CFB65800F94602 /* View1Controller.m */,
+				7980FEA927CFB75500F94602 /* ReminderViewController.h */,
+				7980FEAA27CFB75500F94602 /* ReminderViewController.m */,
+				7980FEAC27CFB8A600F94602 /* ReminderViewController.xib */,
 			);
 			path = TabBarDemo_mine;
 			sourceTree = "<group>";
@@ -133,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7980FEAD27CFB8A600F94602 /* ReminderViewController.xib in Resources */,
 				7980FE9A27CFACC700F94602 /* LaunchScreen.storyboard in Resources */,
 				7980FE9727CFACC700F94602 /* Assets.xcassets in Resources */,
 				7980FE9527CFACC600F94602 /* Main.storyboard in Resources */,
@@ -146,8 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7980FEA827CFB65800F94602 /* View1Controller.m in Sources */,
 				7980FE9227CFACC600F94602 /* ViewController.m in Sources */,
+				7980FEA527CFAD4300F94602 /* View1.m in Sources */,
 				7980FE8C27CFACC600F94602 /* AppDelegate.m in Sources */,
+				7980FEAB27CFB75500F94602 /* ReminderViewController.m in Sources */,
 				7980FE9D27CFACC700F94602 /* main.m in Sources */,
 				7980FE8F27CFACC600F94602 /* SceneDelegate.m in Sources */,
 			);
