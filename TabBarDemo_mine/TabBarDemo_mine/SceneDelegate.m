@@ -34,14 +34,20 @@
 - (void)sceneDidBecomeActive:(UIScene *)scene {
     // Called when the scene has moved from an inactive state to an active state.
     // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+    View1Controller *hvc = [[View1Controller alloc] init];
+    
     // 获取指向 NSBundle 对象的指针，该NSBundle对象代表应用的主程序包
     NSBundle *appBundle = [NSBundle mainBundle];
     
     // 告诉初始化方法在 appBundle 查找BNRReminderViewController.xib文件
-    ReminderViewController *rvc = [[ReminderViewController alloc] initWithNibName:@"ReminderViewController" bundle:appBundle];
+//    ReminderViewController *rvc = [[ReminderViewController alloc] initWithNibName:@"ReminderViewController" bundle:appBundle];
+    // init方法调用initWithNibName方法时虽然传参上nil，但是会默认查找同名的xib文件，所以也可以加载成功
+    ReminderViewController *rvc = [[ReminderViewController alloc] init];
 
-//    View1Controller *hvc = [[View1Controller alloc] init];
-    [self.window setRootViewController:rvc];
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[rvc,hvc];
+    
+    [self.window setRootViewController:tabBarController];
     [self.window setBackgroundColor:[UIColor whiteColor]];
 }
 
