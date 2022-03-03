@@ -29,10 +29,11 @@
         
         // 从图像文件创建一个UIImage对象
         UIImage *i = [UIImage imageNamed:@"Time.png"];
-        self.tabBarItem.badgeColor = [UIColor yellowColor];
-        
+        UIImage *i2 = [UIImage imageNamed:@"Hypno.png"];
+
         // 将UIImage对象赋给标签项的image属性
         self.tabBarItem.image = i;
+        [self.tabBarItem setSelectedImage:i2];
         
     }
     return self;
