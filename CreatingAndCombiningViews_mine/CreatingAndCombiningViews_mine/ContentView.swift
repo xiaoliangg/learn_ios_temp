@@ -22,8 +22,11 @@ struct ContentView: View {
                 Text("Turtle Rock")
                     .font(.title)
 
+                // Stack组合多个view
+                // 见 https://developer.apple.com/tutorials/swiftui/creating-and-combining-views Section3 Combine Views Using Stacks
                 HStack {
                     Text("Joshua Tree National Park")
+                    // Spacer使用
                     Spacer()
                     Text("California")
                 }
