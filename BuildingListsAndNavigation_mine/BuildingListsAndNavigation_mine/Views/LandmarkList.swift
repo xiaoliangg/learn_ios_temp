@@ -11,8 +11,15 @@ import MapKit
 struct LandmarkList: View {
     var body: some View {
 //        List(landmarks,id:\.id){Landmark in
-        List(landmarks){Landmark in
-            LandmarkRow(landmark: Landmark)
+        NavigationView {
+            List(landmarks){ landmark in
+                NavigationLink{
+                    LandmarkDetail(landmark: landmark)
+                } label: {
+                    LandmarkRow(landmark: landmark)
+                }
+            }
+            .navigationTitle("Landmarks")
         }
     }
 }
