@@ -22,8 +22,15 @@ struct LandmarkRow: View {
     }
 }
 
+
+// 如下如有疑问，参考 https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation 搜索 previewLayout
 struct LandmarkRow_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkRow(landmark: landmarks[0])
+        Group{
+            LandmarkRow(landmark: landmarks[1])
+            LandmarkRow(landmark: landmarks[2])
+        }
+        .previewLayout(.fixed(width: 300, height: 70))
+
     }
 }
