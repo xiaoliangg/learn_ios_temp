@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// xcode整理文件:选中文件, File > New > Group from Selection
 @main
 struct CreatingAndCombiningViews_mineApp: App {
     var body: some Scene {
