@@ -9,10 +9,18 @@ import SwiftUI
 import MapKit
 // 1. \.id 和 Identifiable 协议解释   Lists work with identifiable data。 https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation
 struct LandmarkList: View {
+    @State private var showFavoritesOnly = true
+
+    var filteredLandmarks: [Landmark] {
+        landmarks.filter { landmark in
+            (!showFavoritesOnly || landmark.isFavorite)
+        }
+    }
+    
     var body: some View {
 //        List(landmarks,id:\.id){Landmark in
         NavigationView {
-            List(landmarks){ landmark in
+            List(filteredLandmarks){ landmark in
                 NavigationLink{
                     LandmarkDetail(landmark: landmark)
                 } label: {
