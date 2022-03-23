@@ -18,7 +18,7 @@ struct ContentView: View {
                 .offset(y: -130)
                 .padding(.bottom, -130)
             
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading)  {
                 Text("Turtle Rock")
                     .font(.title)
 
