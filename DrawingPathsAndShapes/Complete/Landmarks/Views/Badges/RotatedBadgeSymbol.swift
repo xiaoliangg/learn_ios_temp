@@ -6,7 +6,7 @@ A view that displays a rotated version of a badge symbol.
 */
 
 import SwiftUI
-
+// 包含:BadgeSymbol;
 struct RotatedBadgeSymbol: View {
     let angle: Angle
 

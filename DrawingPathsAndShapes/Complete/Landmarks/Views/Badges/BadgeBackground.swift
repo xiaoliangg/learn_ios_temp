@@ -7,6 +7,7 @@ A view that displays the background of a badge.
 
 import SwiftUI
 
+// 包含:HexagonParameters
 struct BadgeBackground: View {
     var body: some View {
         GeometryReader { geometry in

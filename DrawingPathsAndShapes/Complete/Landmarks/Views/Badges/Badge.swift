@@ -7,6 +7,7 @@ A view that displays a badge.
 
 import SwiftUI
 
+// 顶部文件,包含:RotatedBadgeSymbol;BadgeBackground
 struct Badge: View {
     var badgeSymbols: some View {
         ForEach(0..<8) { index in

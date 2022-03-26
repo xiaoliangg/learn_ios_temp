@@ -7,6 +7,7 @@ Size, position, and other information used to draw a badge.
 
 import CoreGraphics
 
+// 底层文件
 struct HexagonParameters {
     struct Segment {
         let line: CGPoint
