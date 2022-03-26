@@ -42,9 +42,13 @@ struct HikeView: View {
                     Label("Graph", systemImage: "chevron.right.circle")
                         .labelStyle(.iconOnly)
                         .imageScale(.large)
-                        .rotationEffect(.degrees(showDetail ? 90 : 0))
-                        .scaleEffect(showDetail ? 1.5 : 1)
+                        .rotationEffect(.degrees(showDetail ? 90 : 0)) // 按钮旋转角度
+//                        .animation(nil, value: showDetail) // 取消旋转动画
+                        .scaleEffect(showDetail ? 1.5 : 1) // 按钮放大倍数
                         .padding()
+//                        .animation(.spring(), value: showDetail)
+
+
                 }
             }
 
