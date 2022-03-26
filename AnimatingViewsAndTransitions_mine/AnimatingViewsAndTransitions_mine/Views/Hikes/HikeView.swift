@@ -8,11 +8,14 @@ A view displaying information about a hike, including an elevation graph.
 import SwiftUI
 
 extension AnyTransition {
+    //点击按钮后图标进入、退出的动画效果
     static var moveAndFade: AnyTransition {
+        // 滑入、缩出
         .asymmetric(
             insertion: .move(edge: .trailing).combined(with: .opacity),
             removal: .scale.combined(with: .opacity)
         )
+//        .slide //滑入、滑出
     }
 }
 
