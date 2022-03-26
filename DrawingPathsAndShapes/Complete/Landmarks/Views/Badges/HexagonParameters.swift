@@ -8,6 +8,7 @@ Size, position, and other information used to draw a badge.
 import CoreGraphics
 
 // 底层文件
+// 贝塞尔曲线
 struct HexagonParameters {
     struct Segment {
         let line: CGPoint

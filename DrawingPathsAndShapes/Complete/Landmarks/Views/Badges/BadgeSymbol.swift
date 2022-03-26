@@ -16,25 +16,25 @@ struct BadgeSymbol: View {
             Path { path in
                 let width = min(geometry.size.width, geometry.size.height)
                 let height = width * 0.75
-                let spacing = width * 0.030
-                let middle = width * 0.5
+                let spacing = width * 0.030 // 上下两个图形的间距
+                let middle = width * 0.5 // x轴中点
                 let topWidth = width * 0.226
                 let topHeight = height * 0.488
 
                 path.addLines([
-                    CGPoint(x: middle, y: spacing),
-                    CGPoint(x: middle - topWidth, y: topHeight - spacing),
-                    CGPoint(x: middle, y: topHeight / 2 + spacing),
-                    CGPoint(x: middle + topWidth, y: topHeight - spacing),
+                    CGPoint(x: middle, y: spacing), // 上图形顶点
+                    CGPoint(x: middle - topWidth, y: topHeight - spacing), // 上图形左底点
+                    CGPoint(x: middle, y: topHeight / 2 + spacing), // 上图中底点
+                    CGPoint(x: middle + topWidth, y: topHeight - spacing), // 上图右底点
                     CGPoint(x: middle, y: spacing)
                 ])
 
-                path.move(to: CGPoint(x: middle, y: topHeight / 2 + spacing * 3))
+                path.move(to: CGPoint(x: middle, y: topHeight / 2 + spacing * 3)) // 下图形中顶点
                 path.addLines([
-                    CGPoint(x: middle - topWidth, y: topHeight + spacing),
-                    CGPoint(x: spacing, y: height - spacing),
-                    CGPoint(x: width - spacing, y: height - spacing),
-                    CGPoint(x: middle + topWidth, y: topHeight + spacing),
+                    CGPoint(x: middle - topWidth, y: topHeight + spacing), // 下图形左顶点
+                    CGPoint(x: spacing, y: height - spacing), // 下图形左底点
+                    CGPoint(x: width - spacing, y: height - spacing), // 下图形右底点
+                    CGPoint(x: middle + topWidth, y: topHeight + spacing), // 下图形右顶点
                     CGPoint(x: middle, y: topHeight / 2 + spacing * 3)
                 ])
             }
