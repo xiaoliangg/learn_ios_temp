@@ -85,7 +85,6 @@
 				79E71AF727EEE9FA00970F04 /* Model */,
 				79E71AEF27EEE97E00970F04 /* Views */,
 				79E71AE727EEE95500970F04 /* Preview Content */,
-				79E71B1027EF010900970F04 /* Badges */,
 			);
 			path = DrawingPathsAndShapes_mine;
 			sourceTree = "<group>";
@@ -101,6 +100,7 @@
 		79E71AEF27EEE97E00970F04 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				79E71B1027EF010900970F04 /* Badges */,
 				79E71AFE27EEEA5600970F04 /* Helpers */,
 				79E71AE327EEE95400970F04 /* ContentView.swift */,
 				79E71B0527EEEAC100970F04 /* Landmarks */,
