@@ -24,6 +24,7 @@
 		79E71B0927EEF14400970F04 /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E71B0827EEF14400970F04 /* BadgeBackground.swift */; };
 		79E71B0B27EEF65E00970F04 /* BadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E71B0A27EEF65E00970F04 /* BadgeSymbol.swift */; };
 		79E71B0D27EEF72800970F04 /* RotatedBadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E71B0C27EEF72800970F04 /* RotatedBadgeSymbol.swift */; };
+		79E71B0F27EEFFF400970F04 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E71B0E27EEFFF400970F04 /* Badge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		79E71B0827EEF14400970F04 /* BadgeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
 		79E71B0A27EEF65E00970F04 /* BadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSymbol.swift; sourceTree = "<group>"; };
 		79E71B0C27EEF72800970F04 /* RotatedBadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatedBadgeSymbol.swift; sourceTree = "<group>"; };
+		79E71B0E27EEFFF400970F04 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				79E71B0827EEF14400970F04 /* BadgeBackground.swift */,
 				79E71B0A27EEF65E00970F04 /* BadgeSymbol.swift */,
 				79E71B0C27EEF72800970F04 /* RotatedBadgeSymbol.swift */,
+				79E71B0E27EEFFF400970F04 /* Badge.swift */,
 			);
 			path = DrawingPathsAndShapes_mine;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79E71AE427EEE95400970F04 /* ContentView.swift in Sources */,
+				79E71B0F27EEFFF400970F04 /* Badge.swift in Sources */,
 				79E71AF627EEE9E900970F04 /* ModelData.swift in Sources */,
 				79E71AF927EEEA0E00970F04 /* MapView.swift in Sources */,
 				79E71AE227EEE95400970F04 /* DrawingPathsAndShapes_mineApp.swift in Sources */,
