@@ -11,6 +11,11 @@ final class ModelData: ObservableObject {
     // observable object:观察者对象？当界面属性发生变化时，会持久化到磁盘
     @Published var landmarks: [Landmark] = load("landmarkData.json")
     var hikes: [Hike] = load("hikeData.json")
+    
+    var features: [Landmark] {
+        landmarks.filter { $0.isFeatured }
+    }
+    
     // 字典类型,key=landmark.category.value,value=landmarks
     var categories: [String: [Landmark]] {
         Dictionary(

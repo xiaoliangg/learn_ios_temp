@@ -13,10 +13,21 @@ struct CategoryHome: View {
     var body: some View {
         NavigationView {
             List {
+                modelData.features[0].image
+                    .resizable()
+                    .scaledToFill()
+                    .frame(height: 200)
+                    .clipped()
+                // 将两种地标预览的边缘插图设置为零，以便内容可以扩展到显示的边缘。
+                    .listRowInsets(EdgeInsets())
+
+                
                 // \.self啥语法??
                 ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
-                    Text(key)
+                    CategoryRow(categoryName: key, items: modelData.categories[key]!)
                 }
+                .listRowInsets(EdgeInsets())
+
             }
             .navigationTitle("Featured")
         }
