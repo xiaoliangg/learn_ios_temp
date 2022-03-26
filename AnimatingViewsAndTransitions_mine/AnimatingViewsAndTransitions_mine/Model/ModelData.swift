@@ -10,6 +10,7 @@ import Foundation
 final class ModelData: ObservableObject {
     // observable object:观察者对象？当界面属性发生变化时，会持久化到磁盘
     @Published var landmarks: [Landmark] = load("landmarkData.json")
+    var hikes: [Hike] = load("hikeData.json")
 }
 
 func load<T: Decodable>(_ filename: String) -> T {
