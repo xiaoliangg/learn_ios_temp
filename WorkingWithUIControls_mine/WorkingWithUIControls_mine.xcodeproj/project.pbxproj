@@ -38,6 +38,7 @@
 		7903F92B27F05E0100B729A2 /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7903F92A27F05E0100B729A2 /* ProfileHost.swift */; };
 		7903F92D27F05E5100B729A2 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7903F92C27F05E5100B729A2 /* ProfileSummary.swift */; };
 		7903F92F27F05E9A00B729A2 /* HikeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7903F92E27F05E9A00B729A2 /* HikeBadge.swift */; };
+		7903F93127F075B900B729A2 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7903F93027F075B900B729A2 /* ProfileEditor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		7903F92A27F05E0100B729A2 /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
 		7903F92C27F05E5100B729A2 /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		7903F92E27F05E9A00B729A2 /* HikeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeBadge.swift; sourceTree = "<group>"; };
+		7903F93027F075B900B729A2 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				7903F8F327F0478800B729A2 /* Hike.swift */,
 				7903F8F427F0478800B729A2 /* ModelData.swift */,
 				7903F8F527F0478800B729A2 /* Landmark.swift */,
+				7903F92727F048E100B729A2 /* Profile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,9 +216,9 @@
 		7903F92927F05DA800B729A2 /* Profiles */ = {
 			isa = PBXGroup;
 			children = (
-				7903F92727F048E100B729A2 /* Profile.swift */,
 				7903F92A27F05E0100B729A2 /* ProfileHost.swift */,
 				7903F92C27F05E5100B729A2 /* ProfileSummary.swift */,
+				7903F93027F075B900B729A2 /* ProfileEditor.swift */,
 			);
 			path = Profiles;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				7903F91527F0478800B729A2 /* HikeGraph.swift in Sources */,
 				7903F91D27F0478800B729A2 /* CategoryRow.swift in Sources */,
 				7903F91F27F0478800B729A2 /* MapView.swift in Sources */,
+				7903F93127F075B900B729A2 /* ProfileEditor.swift in Sources */,
 				7903F8E227F0475200B729A2 /* WorkingWithUIControls_mineApp.swift in Sources */,
 				7903F91C27F0478800B729A2 /* CategoryHome.swift in Sources */,
 				7903F92527F0478800B729A2 /* BadgeBackground.swift in Sources */,
