@@ -14,11 +14,8 @@ struct CategoryHome: View {
     var body: some View {
         NavigationView {
             List {
-                modelData.features[0].image
-                    .resizable()
-                    .scaledToFill()
-                    .frame(height: 200)
-                    .clipped()
+                PageView(pages: modelData.features.map { FeatureCard(landmark: $0) })
+                                    .aspectRatio(3 / 2, contentMode: .fit)
                 // 将两种地标预览的边缘插图设置为零，以便内容可以扩展到显示的边缘。
                     .listRowInsets(EdgeInsets())
 
