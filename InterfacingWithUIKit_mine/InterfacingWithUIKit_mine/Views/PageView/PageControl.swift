@@ -38,6 +38,7 @@ struct PageControl: UIViewRepresentable {
             self.control = control
         }
 
+        // 将需要暴露给 Objective-C 使用的如类，属性和方法的声明前面加上 @objc
         @objc
         func updateCurrentPage(sender: UIPageControl) {
             control.currentPage = sender.currentPage

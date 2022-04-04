@@ -14,8 +14,10 @@ struct MapView: View {
     // 见 https://developer.apple.com/tutorials/swiftui/creating-and-combining-views section5
     // @state 其他博客:https://onevcat.com/2021/01/swiftui-state/
     @State private var region = MKCoordinateRegion(
+        // 位置
         center: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868),
-        span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
+        // 半径
+        span: MKCoordinateSpan(latitudeDelta: 10.0, longitudeDelta: 10.0)
     )
 
     var body: some View {

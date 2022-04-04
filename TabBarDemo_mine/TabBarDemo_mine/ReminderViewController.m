@@ -20,6 +20,8 @@
     NSLog(@"Setting a remember for %@",date);
 }
 
+/// nibNameOrNil  指的是nib文件的名字，这里指 ReminderViewController.xib
+/// nibBundleOrNil 指的是bundle的名字
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
