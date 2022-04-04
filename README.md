@@ -6,6 +6,6 @@
 
 * @StateObject,@Published,@State,@EnvironmentObject
 
-* @Environment
+* @Environment  
   [SwiftUI内功之Environment深入研究与使用](https://www.jianshu.com/p/53d9672c7616)
 * @Binding,@objc
