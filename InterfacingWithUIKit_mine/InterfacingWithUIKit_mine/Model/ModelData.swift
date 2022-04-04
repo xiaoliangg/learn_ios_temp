@@ -17,11 +17,14 @@ final class ModelData: ObservableObject {
         landmarks.filter { $0.isFeatured }
     }
     
-    // 字典类型,key=landmark.category.value,value=landmarks
+    // 字典类型,key为String类型,=Landmark.category的枚举的字面量值,value为Landmark数组,=landmarks
     var categories: [String: [Landmark]] {
         Dictionary(
             grouping: landmarks,
             by: { $0.category.rawValue }
+            // 完全体写法
+//            by:{(landmark:Landmark) -> String in
+//                return landmark.category.rawValue}
         )
     }
 }
