@@ -34,3 +34,28 @@
 ### @objc
 [Swift学习之@objc](https://www.jianshu.com/p/b651126b1b1d)
 1. 将需要暴露给 Objective-C 使用的如类，属性和方法的声明前面加上 @objc
+
+## swiftui原理
+[SwiftUI：原理](https://www.jianshu.com/p/3c71706ef71d)
+### some 关键字
+1. some View 这种写法使用了 Swift 的新特性 Opaque return types 。它向编译器作出保证，每次 body 得到的一定是某一个确定的遵守 View 协议的类型，但是请编译器网开一面，不要再细究具体的类型。返回类型确定单一这个条件十分重要，比如，下面的代码也是无法通过的。
+```java
+var body: some View
+{
+    if someCondition
+    {
+        // 这个分支返回 Text
+        return Text("Hello World")
+    }
+    else
+    {
+        // 这个分支返回 Button，和 if 分支的类型不统一
+        return Button(action: {}) {
+            Text("Tap me")
+        }
+    }
+}
+```
+2. 这是一个编译期间的特性，在保证associatedtype protocol的功能的前提下，使用 some 可以抹消具体的类型。
+
+### ViewBuilder的解释 未完成
