@@ -14,6 +14,7 @@ struct AnnotationState2: View {
         List{
             //子视图显示和修改
             DetailView0(number: value)
+//            DetailView0(number: $value)  // 与下方的 @Binding 配合使用
             //父视图显示和修改
             Text("AnnotationState2: \(value)")
             Button("+") { value += 1 }
@@ -29,6 +30,7 @@ struct AnnotationState2_Previews: PreviewProvider {
 
 struct DetailView0: View {
     @State var number: Int
+//    @Binding var number: Int // 与上方的 $value 配合使用
     var body: some View {
         HStack {
             Text("DetailView0: \(number)")

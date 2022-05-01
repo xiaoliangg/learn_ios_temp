@@ -28,7 +28,7 @@
  5. 环境的另一个重要用例是依赖注入。关键注释和方法:@EnvironmentObject,environmentObject()
 ### @Binding  
 1. 有时候我们会把一个视图的属性传至子节点中，但是又不能直接的传递给子节点，因为在 Swift 中值的传递形式是值类型传递方式，也就是传递给子节点的是一个拷贝过的值。但是通过 @Binding 修饰器修饰后，属性变成了一个引用类型，传递变成了引用传递，这样父子视图的状态就能关联起来了。
-2. 使用方式:在子视图里用 @Binding 修饰 showFavorited 属性, 在传递属性是使用 $ 来传递 showFavorited 属性的引用，这样子视图就能读写父视图里的状态值了，并且值发生了修改 SwiftUI 会更新父视图和子视图。示例见:AnnotationBinding.swift(InterfacingWithUIKit_mine)
+2. 使用方式:在子视图里用 @Binding 修饰 showFavorited 属性, 在传递属性是使用 $ 来传递 showFavorited 属性的引用，这样子视图就能读写父视图里的状态值了，并且值发生了修改 SwiftUI 会更新父视图和子视图。示例见:1.AnnotationBinding.swift(InterfacingWithUIKit_mine); 2. git show ed9864011dc42a7e48396b73927f91a8f94a834b  
 3. Toggle 组件的创建也使用 showFavorited 这种格式，因为 Toggle 组件会修改传入的值，如果是一个纯读的组件比如 Text 就不需要 使用showFavorited， 直接 Text(showFavorited) 使用就好了
 
 ### @objc
