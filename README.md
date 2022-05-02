@@ -14,7 +14,7 @@
 | DrawingPathsAndShapes_mine<br>DrawingPathsAndShapes  | [官网教程](https://developer.apple.com/tutorials/swiftui/drawing-paths-and-shapes) | 画图、画曲线、组合图形 | 贝塞尔曲线 | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/06_DrawingPathsAndShapes.png)|
 | AnimatingViewsAndTransitions_mine<br>AnimatingViewsAndTransitions  | [官网教程](https://developer.apple.com/tutorials/swiftui/animating-views-and-transitions) | 动画 | swiftui的动画技术 | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/07_AnimatingViewsAndTransitions.png)|
 | <b>ComposingComplexInterfaces_mine<br>ComposingComplexInterfaces</b>  | [官网教程](https://developer.apple.com/tutorials/swiftui/composing-complex-interfaces) | 组合复杂的接口<br>见效果图 | ContentView有使用 TabView和@State | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/08_ComposingComplexInterfaces.png)|
-| CreatingAndCombiningViews_mine  | [官网教程]() | tab切换 | storyboard | -|
+| <b>WorkingWithUIControls_mine<br>WorkingWithUIControls</b>  | [官网教程](https://developer.apple.com/tutorials/swiftui/working-with-ui-controls) | 用户信息CRUD | storyboard | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/09_WorkingWithUIControls_userInfo.png)![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/09_WorkingWithUIControls_edit.png)|
 
 
 ## 注解总结  
