@@ -12,7 +12,7 @@
 | BuildingListsAndNavigation_mine<br>BuildingListsAndNavigation  | [官网教程](https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation) | 地标列表;<br>列表和详情联动 | 全局变量ModelData.landmarks??<br>多台机器预览(LandmarkList)和组预览(LandmarkRow) | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/04_BuildingListsAndNavigation.png) |
 | <b>HandingUserInput_mine<br>HandlingUserInput</b>  | [官网教程](https://developer.apple.com/tutorials/swiftui/handling-user-input) | 标记喜欢的地点;<br>过滤按钮,过滤喜欢的地点 | @State/ObservableObject/@Published<br>/@EnvironmentObject/@StateObject/@Binding<br>详见工程内README | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/05_HandingUserInput_list.png)![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/05_HandingUserInput_mark.png)|
 | DrawingPathsAndShapes_mine<br>DrawingPathsAndShapes  | [官网教程](https://developer.apple.com/tutorials/swiftui/drawing-paths-and-shapes) | 画图、画曲线、组合图形 | 贝塞尔曲线 | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/06_DrawingPathsAndShapes.png)|
-| CreatingAndCombiningViews_mine  | [官网教程]() | tab切换 | storyboard | -|
+| AnimatingViewsAndTransitions_mine<br>AnimatingViewsAndTransitions  | [官网教程](https://developer.apple.com/tutorials/swiftui/animating-views-and-transitions) | 动画 | swiftui的动画技术 | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/07_AnimatingViewsAndTransitions.png)|
 | CreatingAndCombiningViews_mine  | [官网教程]() | tab切换 | storyboard | -|
 | CreatingAndCombiningViews_mine  | [官网教程]() | tab切换 | storyboard | -|
 
