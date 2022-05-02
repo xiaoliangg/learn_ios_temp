@@ -6,16 +6,15 @@
 
 |  project     | 官网地址  | 功能描述  | 关键词 | 截图展示
 |  :---        | :---     | :---    | :---  | :---  |
-| ToolbarSearch_mine<br>ToolbarSearch  | - | OC+storyboard实现搜索框; | UISearchBarDelegate, UIPopoverControllerDelegate;自定义Delegate;自定义storyboard | <a href="https://github.com/xiaoliangg/learn_ios_temp/blob/main/screenshots/ToolbarSearch.png">app截图</a>｜
-| TabBarDemo_mine  | - | tab切换;设置启动屏幕;设置闹钟 | OC;storyboard |
-| CreatingAndCombiningViews_mine<br>CreatingAndCombiningViews  | [官网教程](https://developer.apple.com/tutorials/swiftui/creating-and-combining-views) | swiftui创建view并展示详情 | storyboard |
+| ToolbarSearch_mine<br>ToolbarSearch  | - | OC+storyboard实现搜索框; | UISearchBarDelegate, UIPopoverControllerDelegate;自定义Delegate;自定义storyboard | <a href="https://github.com/xiaoliangg/learn_ios_temp/blob/main/screenshots/ToolbarSearch.png">app截图</a>
+| TabBarDemo_mine  | - | tab切换;设置启动屏幕;设置闹钟 | OC;storyboard | <a href="https://github.com/xiaoliangg/learn_ios_temp/blob/main/screenshots/TabBarDemo_mine01.png">闹钟设置界面</a><br>;<a href="https://github.com/xiaoliangg/learn_ios_temp/blob/main/screenshots/TabBarDemo_mine02.png">界面02</a>
+| CreatingAndCombiningViews_mine<br>CreatingAndCombiningViews  | [官网教程](https://developer.apple.com/tutorials/swiftui/creating-and-combining-views) | swiftui创建view并展示详情 | storyboard | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/CreatingAndCombiningViews.jpg)
 | CreatingAndCombiningViews_mine  | [官网教程]() | tab切换 | storyboard |
 | CreatingAndCombiningViews_mine  | [官网教程]() | tab切换 | storyboard |
 | CreatingAndCombiningViews_mine  | [官网教程]() | tab切换 | storyboard |
 | CreatingAndCombiningViews_mine  | [官网教程]() | tab切换 | storyboard |
 | CreatingAndCombiningViews_mine  | [官网教程]() | tab切换 | storyboard |
 | CreatingAndCombiningViews_mine  | [官网教程]() | tab切换 | storyboard |
-
 
 
 ## 注解总结  
