@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
+    // 用于接收修改 isFavorite
     @EnvironmentObject var modelData: ModelData
 
     var landmark: Landmark
