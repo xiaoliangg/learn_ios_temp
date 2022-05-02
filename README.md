@@ -4,18 +4,19 @@
 *  工程按时间顺序
 *  mine为我自己的工程,另外一个是苹果官网下载下来的工程  
 
+
 |  project     | 官网地址  | 功能描述  | 关键词 | 截图展示
 |  :---        | :---     | :---    | :---  | :---  |
 | ToolbarSearch_mine<br>ToolbarSearch  | - | OC+storyboard实现搜索框; | UISearchBarDelegate, UIPopoverControllerDelegate;自定义Delegate;自定义storyboard | <a href="https://github.com/xiaoliangg/learn_ios_temp/blob/main/screenshots/ToolbarSearch.png">app截图</a> |
 | TabBarDemo_mine  | - | tab切换;设置启动屏幕;设置闹钟 | OC;storyboard | <a href="https://github.com/xiaoliangg/learn_ios_temp/blob/main/screenshots/TabBarDemo_mine01.png">闹钟设置界面</a><br>;<a href="https://github.com/xiaoliangg/learn_ios_temp/blob/main/screenshots/TabBarDemo_mine02.png">界面02</a> |
-| CreatingAndCombiningViews_mine<br>CreatingAndCombiningViews  | [官网教程](https://developer.apple.com/tutorials/swiftui/creating-and-combining-views) | swiftui创建view并展示详情 | swiftui组件:<br>Image<br>MapKit(MKCoordinateRegion和@State) | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/CreatingAndCombiningViews.jpg) |
-| BuildingListsAndNavigation_mine<br>BuildingListsAndNavigation  | [官网教程](https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation) | 地标列表;<br>列表和详情联动 | 全局变量ModelData.landmarks??<br>多台机器预览(LandmarkList)和组预览(LandmarkRow) | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/04_BuildingListsAndNavigation.png) |
-| <b>HandingUserInput_mine<br>HandlingUserInput</b>  | [官网教程](https://developer.apple.com/tutorials/swiftui/handling-user-input) | 标记喜欢的地点;<br>过滤按钮,过滤喜欢的地点 | @State/ObservableObject/@Published<br>/@EnvironmentObject/@StateObject/@Binding<br>详见工程内README | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/05_HandingUserInput_list.png)![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/05_HandingUserInput_mark.png)|
-| DrawingPathsAndShapes_mine<br>DrawingPathsAndShapes  | [官网教程](https://developer.apple.com/tutorials/swiftui/drawing-paths-and-shapes) | 画图、画曲线、组合图形 | 贝塞尔曲线 | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/06_DrawingPathsAndShapes.png)|
-| AnimatingViewsAndTransitions_mine<br>AnimatingViewsAndTransitions  | [官网教程](https://developer.apple.com/tutorials/swiftui/animating-views-and-transitions) | 动画 | swiftui的动画技术 | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/07_AnimatingViewsAndTransitions.png)|
-| <b>ComposingComplexInterfaces_mine<br>ComposingComplexInterfaces</b>  | [官网教程](https://developer.apple.com/tutorials/swiftui/composing-complex-interfaces) | 组合复杂的接口<br>见效果图 | ContentView有使用 TabView和@State | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/08_ComposingComplexInterfaces.png)|
-| <b>WorkingWithUIControls_mine<br>WorkingWithUIControls</b>  | [官网教程](https://developer.apple.com/tutorials/swiftui/working-with-ui-controls) | 用户信息CRUD | 1.ProfileHost使用@Environment(\.editMode)<br>2.其他注解:@State;@EnvironmentObject;@Pulbished;@Binding | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/09_WorkingWithUIControls_userInfo.png)![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/09_WorkingWithUIControls_edit.png)|
-| <b>InterfacingWithUIKit_mine<br>InterfacingWithUIKit</b>  | [官网教程](https://developer.apple.com/tutorials/swiftui/interfacing-with-uikit) | 与 UIKit 交互:<br>集成swift的Controller | <b>学习swiftui如何集成Controller，及原理</b> | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/10_InterfacingWithUIKit.png)|
+| CreatingAndCombiningViews_mine<br>CreatingAndCombiningViews  | [官网教程](https://developer.apple.com/tutorials/swiftui/creating-and-combining-views) | swiftui创建view并展示详情 | swiftui组件:<br>Image<br>MapKit(MKCoordinateRegion和@State) | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/CreatingAndCombiningViews.jpg#width-full)|
+| BuildingListsAndNavigation_mine<br>BuildingListsAndNavigation  | [官网教程](https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation) | 地标列表;<br>列表和详情联动 | 全局变量ModelData.landmarks??<br>多台机器预览(LandmarkList)和组预览(LandmarkRow) | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/04_BuildingListsAndNavigation.png#width-full) |
+| <b>HandingUserInput_mine<br>HandlingUserInput</b>  | [官网教程](https://developer.apple.com/tutorials/swiftui/handling-user-input) | 标记喜欢的地点;<br>过滤按钮,过滤喜欢的地点 | @State/ObservableObject/@Published<br>/@EnvironmentObject/@StateObject/@Binding<br>详见工程内README | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/05_HandingUserInput_list.png#width-full)![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/05_HandingUserInput_mark.png#width-full)|
+| DrawingPathsAndShapes_mine<br>DrawingPathsAndShapes  | [官网教程](https://developer.apple.com/tutorials/swiftui/drawing-paths-and-shapes) | 画图、画曲线、组合图形 | 贝塞尔曲线 | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/06_DrawingPathsAndShapes.png#width-full)|
+| AnimatingViewsAndTransitions_mine<br>AnimatingViewsAndTransitions  | [官网教程](https://developer.apple.com/tutorials/swiftui/animating-views-and-transitions) | 动画 | swiftui的动画技术 | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/07_AnimatingViewsAndTransitions.png#width-full)|
+| <b>ComposingComplexInterfaces_mine<br>ComposingComplexInterfaces</b>  | [官网教程](https://developer.apple.com/tutorials/swiftui/composing-complex-interfaces) | 组合复杂的接口<br>见效果图 | ContentView有使用 TabView和@State | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/08_ComposingComplexInterfaces.png#width-full)|
+| <b>WorkingWithUIControls_mine<br>WorkingWithUIControls</b>  | [官网教程](https://developer.apple.com/tutorials/swiftui/working-with-ui-controls) | 用户信息CRUD | 1.ProfileHost使用@Environment(\.editMode)<br>2.其他注解:@State;@EnvironmentObject;@Pulbished;@Binding | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/09_WorkingWithUIControls_userInfo.png#width-full)![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/09_WorkingWithUIControls_edit.png#width-full)|
+| <b>InterfacingWithUIKit_mine<br>InterfacingWithUIKit</b>  | [官网教程](https://developer.apple.com/tutorials/swiftui/interfacing-with-uikit) | 与 UIKit 交互:<br>集成swift的Controller | <b>学习swiftui如何集成Controller，及原理</b> | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/10_InterfacingWithUIKit.png#width-full)|
 
 
 ## 注解总结  
@@ -76,3 +77,13 @@ var body: some View
 2. 这是一个编译期间的特性，在保证associatedtype protocol的功能的前提下，使用 some 可以抹消具体的类型。
 
 ### ViewBuilder的解释 **未完成**
+
+
+
+
+
+<style type="text/css" rel="stylesheet">
+img[src*="#width-full"] {
+ width: 10%;
+}
+</style>
