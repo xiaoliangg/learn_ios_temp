@@ -18,11 +18,16 @@ struct ProfileHost: View {
             HStack {
                 if editMode?.wrappedValue == .active {
                     Button("Cancel", role: .cancel) {
+                        // 1. 点击cancel后执行的代码。draftProfile 保存页面的更新值,modelData.profile是修改前的值
+                        // 理解:如果cancel，那就将draftProfile回退为初始值;否则draftProfile为更新值。而不管是否因为cancel退出，最终下方的 onDisappear()方法都会用 draftProfile 更新 modelData
                         draftProfile = modelData.profile
                         editMode?.animation().wrappedValue = .inactive
                     }
                 }
                 Spacer()
+                // 作用:
+                // 1.用来改变@Environment(\.editMode)
+                // 2.自动切换显示 "Edit" 或 "Done"
                 EditButton()
             }
 
@@ -31,9 +36,11 @@ struct ProfileHost: View {
             } else {
                 ProfileEditor(profile: $draftProfile)
                     .onAppear {
+                        // 进入编辑模式执行的代码
                         draftProfile = modelData.profile
                     }
                     .onDisappear {
+                        // 退出编辑模式执行的代码
                         modelData.profile = draftProfile
                     }
             }

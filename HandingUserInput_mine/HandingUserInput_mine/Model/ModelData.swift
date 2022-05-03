@@ -8,7 +8,7 @@
 import Foundation
 
 final class ModelData: ObservableObject {
-    // observable object:观察者对象？当界面属性发生变化时，会持久化到磁盘
+    // observable object:观察者对象？当界面属性发生变化时，会影响全局,貌似不会持久化到磁盘？？
     @Published var landmarks: [Landmark] = load("landmarkData.json")
 }
 
