@@ -13,10 +13,13 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
     @Binding var currentPage: Int
 
     // yl SwiftUI calls this makeCoordinator() method before makeUIViewController(context:),
+    // UIViewControllerRepresentable 协议的方法
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
     }
 
+    // UIViewControllerRepresentable 协议的方法
+    // yl SwiftUI calls this method a single time when it’s ready to display the view, and then manages the view controller’s life cycle.
     func makeUIViewController(context: Context) -> UIPageViewController {
         let pageViewController = UIPageViewController(
             transitionStyle: .scroll,
@@ -27,6 +30,7 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
         return pageViewController
     }
     
+    // UIViewControllerRepresentable 协议的方法
     func updateUIViewController(_ pageViewController: UIPageViewController, context: Context) {
         pageViewController.setViewControllers(
             [context.coordinator.controllers[currentPage]], direction: .forward, animated: true)
