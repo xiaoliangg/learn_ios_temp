@@ -34,12 +34,15 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
     }
     
     // UIViewControllerRepresentable 协议的方法
+    // 调用场景:点击图片右下角小圆点，来滑动图片
     func updateUIViewController(_ pageViewController: UIPageViewController, context: Context) {
         pageViewController.setViewControllers(
             [context.coordinator.controllers[currentPage]], direction: .forward, animated: true)
     }
     
-    class Coordinator: NSObject, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+    class Coordinator: NSObject, UIPageViewControllerDataSource
+    , UIPageViewControllerDelegate
+    {
         var parent: PageViewController
         var controllers = [UIViewController]()
 
@@ -50,6 +53,7 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
         }
         
         // These two methods establish the relationships between view controllers, so that you can swipe back and forth between them.
+        // UIPageViewControllerDataSource 的方法
         func pageViewController(
             _ pageViewController: UIPageViewController,
             viewControllerBefore viewController: UIViewController) -> UIViewController?
@@ -63,6 +67,7 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
             return controllers[index - 1]
         }
 
+        // UIPageViewControllerDataSource 的方法
         func pageViewController(
             _ pageViewController: UIPageViewController,
             viewControllerAfter viewController: UIViewController) -> UIViewController?
@@ -76,6 +81,9 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
             return controllers[index + 1]
         }
         
+        // UIPageViewControllerDelegate 的方法
+        // 用于显示当前页
+        // 调用场景:滑动图片，图片右下角小圆点跟随变化
         func pageViewController(
             _ pageViewController: UIPageViewController,
             didFinishAnimating finished: Bool,

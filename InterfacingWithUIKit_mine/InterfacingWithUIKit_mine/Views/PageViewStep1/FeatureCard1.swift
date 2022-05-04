@@ -1,6 +1,6 @@
 import SwiftUI
 // 学习测试用，本工程未用到
-struct FeatureCard2: View {
+struct FeatureCard1: View {
     var landmark: Landmark
 
     var body: some View {
@@ -8,12 +8,12 @@ struct FeatureCard2: View {
             .resizable()
             .aspectRatio(3 / 2, contentMode: .fit)
             .overlay {
-                TextOverlay2(landmark: landmark)
+                TextOverlay1(landmark: landmark)
             }
     }
 }
 
-struct TextOverlay2: View {
+struct TextOverlay1: View {
     var landmark: Landmark
 
     var gradient: LinearGradient {
@@ -38,8 +38,8 @@ struct TextOverlay2: View {
     }
 }
 
-struct FeatureCard2_Previews: PreviewProvider {
+struct FeatureCard1_Previews: PreviewProvider {
     static var previews: some View {
-        FeatureCard(landmark: ModelData().features[0])
+        FeatureCard1(landmark: ModelData().features[0])
     }
 }

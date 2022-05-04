@@ -14,6 +14,7 @@ struct PageView<Page: View>: View {
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             PageViewController(pages: pages, currentPage: $currentPage)
+            // 图片右下角的圆点标识
             PageControl(numberOfPages: pages.count, currentPage: $currentPage)
                 .frame(width: CGFloat(pages.count * 18))
                 .padding(.trailing)
