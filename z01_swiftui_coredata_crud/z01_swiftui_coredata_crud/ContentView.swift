@@ -24,6 +24,10 @@ struct ContentView: View {
             List{
                 ForEach(animals,id: \.self){ animal in
                     Text("\(animal.name!)")
+                        .onTapGesture {
+                            self.newAnimalName = animal.name!
+//                            self.newAnimalName = animal.name ?? ""
+                        }
                     
                 }
                 .onDelete(perform: {(indexSet)->Void in
