@@ -26,6 +26,12 @@ struct ContentView: View {
                     Text("\(animal.name!)")
                     
                 }
+                .onDelete(perform: {(indexSet)->Void in
+                    for index in indexSet{
+                        self.viewContext.delete(self.animals[index])
+                        try? self.viewContext.save()
+                    }
+                })
             }
         }
     }
