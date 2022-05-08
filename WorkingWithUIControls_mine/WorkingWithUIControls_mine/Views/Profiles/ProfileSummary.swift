@@ -19,6 +19,7 @@ struct ProfileSummary: View {
                     .font(.title)
 
                 Text("Notifications: \(profile.prefersNotifications ? "On": "Off" )")
+                // rawValue的含义？https://developer.apple.com/documentation/swift/rawrepresentable/1540698-rawvalue
                 Text("Seasonal Photos: \(profile.seasonalPhoto.rawValue)")
                 Text("Goal Date: ") + Text(profile.goalDate, style: .date)
                 

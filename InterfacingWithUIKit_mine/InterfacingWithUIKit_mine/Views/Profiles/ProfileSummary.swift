@@ -19,6 +19,7 @@ struct ProfileSummary: View {
                     .font(.title)
 
                 Text("Notifications: \(profile.prefersNotifications ? "On": "Off" )")
+                // .rawValue是什么意思?
                 Text("Seasonal Photos: \(profile.seasonalPhoto.rawValue)")
                 Text("Goal Date: ") + Text(profile.goalDate, style: .date)
                 

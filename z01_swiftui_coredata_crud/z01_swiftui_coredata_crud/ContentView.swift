@@ -12,7 +12,7 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(entity: Animals.entity(),sortDescriptors: [],animation: .default)
-    private var animals: FetchedResults<Animals>
+    private var animals: FetchedResults<Animals> // 遍历的元素即是泛型的元素
     
     @State
     private var newAnimalName = ""
