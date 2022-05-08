@@ -17,16 +17,20 @@ struct ContentView: View {
     @State
     private var newAnimalName = ""
 
+    @State
+    private var selectedAnimal:Animals? // 标记要编辑的表项；传递要编辑的表项到save()
+
     var body: some View {
         VStack{
             TextField("Add New", text: self.$newAnimalName).multilineTextAlignment(.trailing)
-            Button("Save"){save()}
+            Button("Save"){save(animal: self.selectedAnimal)}
             List{
                 ForEach(animals,id: \.self){ animal in
                     Text("\(animal.name!)")
                         .onTapGesture {
                             self.newAnimalName = animal.name!
 //                            self.newAnimalName = animal.name ?? ""
+                            self.selectedAnimal = animal
                         }
                     
                 }
@@ -40,10 +44,19 @@ struct ContentView: View {
         }
     }
     
-    func save(){
-        let newAnimal = Animals(context: self.viewContext)
-        newAnimal.name = newAnimalName
-        try? self.viewContext.save()
+    func save(animal:Animals?){
+        if self.selectedAnimal == nil{
+            let newAnimal = Animals(context: self.viewContext)
+            newAnimal.name = newAnimalName
+            try? self.viewContext.save()
+        }else{
+            viewContext.performAndWait { // ??
+                animal!.name = self.newAnimalName
+                try? self.viewContext.save()
+                self.newAnimalName = ""
+                self.selectedAnimal = nil
+            }
+        }
     }
 }
 
