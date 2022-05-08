@@ -17,6 +17,7 @@
 | <b>ComposingComplexInterfaces_mine<br>ComposingComplexInterfaces</b>  | [官网教程](https://developer.apple.com/tutorials/swiftui/composing-complex-interfaces) | 组合复杂的接口<br>见效果图 | ContentView有使用 TabView和@State | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/08_ComposingComplexInterfaces.png#width-full)|
 | <b>WorkingWithUIControls_mine<br>WorkingWithUIControls</b>  | [官网教程](https://developer.apple.com/tutorials/swiftui/working-with-ui-controls) | 用户信息CRUD | 1.ProfileHost使用@Environment(\\.editMode)<br>2.其他注解:@State;@EnvironmentObject;@Pulbished;@Binding | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/09_WorkingWithUIControls_userInfo.png#width-full)![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/09_WorkingWithUIControls_edit.png#width-full)|
 | <b>InterfacingWithUIKit_mine<br>InterfacingWithUIKit</b>  | [官网教程](https://developer.apple.com/tutorials/swiftui/interfacing-with-uikit) | 与 UIKit 交互:<br>集成swift的Controller;<br>实现轮播效果 | <b>学习swiftui如何集成Controller，及原理;<br>协议:UIViewRepresentable;UIViewControllerRepresentable</b> | ![avatar](https://raw.githubusercontent.com/xiaoliangg/learn_ios_temp/main/screenshots/10_InterfacingWithUIKit.png#width-full)|
+| z01_swiftui_coredata_crud  | [视频教程](https://www.youtube.com/watch?v=fNaFUJ0dFoY&ab_channel=AppleCoding) | swiftui_coredata_crud;swiftui增删改查 | |
 
 
 ## 注解总结  
