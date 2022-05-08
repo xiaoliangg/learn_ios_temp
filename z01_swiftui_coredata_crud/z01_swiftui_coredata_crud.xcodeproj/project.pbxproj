@@ -12,7 +12,7 @@
 		79B155F8282779E0009D9B0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79B155F7282779E0009D9B0C /* Assets.xcassets */; };
 		79B155FB282779E0009D9B0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79B155FA282779E0009D9B0C /* Preview Assets.xcassets */; };
 		79B155FD282779E0009D9B0C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B155FC282779E0009D9B0C /* Persistence.swift */; };
-		79B15600282779E0009D9B0C /* z01_swiftui_coredata_crud.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79B155FE282779E0009D9B0C /* z01_swiftui_coredata_crud.xcdatamodeld */; };
+		79EEC7172827837E00D69CB2 /* test03.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79EEC7152827837E00D69CB2 /* test03.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +22,7 @@
 		79B155F7282779E0009D9B0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79B155FA282779E0009D9B0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		79B155FC282779E0009D9B0C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		79B155FF282779E0009D9B0C /* z01_swiftui_coredata_crud.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = z01_swiftui_coredata_crud.xcdatamodel; sourceTree = "<group>"; };
+		79EEC7162827837E00D69CB2 /* test03.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = test03.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 				79B155F5282779DF009D9B0C /* ContentView.swift */,
 				79B155F7282779E0009D9B0C /* Assets.xcassets */,
 				79B155FC282779E0009D9B0C /* Persistence.swift */,
-				79B155FE282779E0009D9B0C /* z01_swiftui_coredata_crud.xcdatamodeld */,
+				79EEC7152827837E00D69CB2 /* test03.xcdatamodeld */,
 				79B155F9282779E0009D9B0C /* Preview Content */,
 			);
 			path = z01_swiftui_coredata_crud;
@@ -145,7 +145,7 @@
 			files = (
 				79B155FD282779E0009D9B0C /* Persistence.swift in Sources */,
 				79B155F6282779DF009D9B0C /* ContentView.swift in Sources */,
-				79B15600282779E0009D9B0C /* z01_swiftui_coredata_crud.xcdatamodeld in Sources */,
+				79EEC7172827837E00D69CB2 /* test03.xcdatamodeld in Sources */,
 				79B155F4282779DF009D9B0C /* z01_swiftui_coredata_crudApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,13 +351,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		79B155FE282779E0009D9B0C /* z01_swiftui_coredata_crud.xcdatamodeld */ = {
+		79EEC7152827837E00D69CB2 /* test03.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				79B155FF282779E0009D9B0C /* z01_swiftui_coredata_crud.xcdatamodel */,
+				79EEC7162827837E00D69CB2 /* test03.xcdatamodel */,
 			);
-			currentVersion = 79B155FF282779E0009D9B0C /* z01_swiftui_coredata_crud.xcdatamodel */;
-			path = z01_swiftui_coredata_crud.xcdatamodeld;
+			currentVersion = 79EEC7162827837E00D69CB2 /* test03.xcdatamodel */;
+			path = test03.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
